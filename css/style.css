@@ -1,3 +1,8 @@
+.body {
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    align-items: center;
+}
 .title {
     background-color: rgb(15, 158, 15);
     color: rgb(0, 0, 0);
@@ -5,13 +10,15 @@
     align-items: center;
 }
 .botones {
-    background-color: rgb(15, 158, 15);
+    background-color: rgb(129, 216, 129);
     color: rgb(0, 0, 0);
     text-align: center;
     align-items: center;
+    margin-left: -30px;
     border: 2px solid #000000;
+    box-shadow: #000000 0px 0px 10px;
     padding: 10px 20px;
-    border-radius: 100px;         /* Bordes redondeados (opcional) */
+    border-radius: 10px;
 }
 .lineabotones {
     color: rgb(0, 0, 0);
@@ -20,11 +27,13 @@
 }
 .ul {
     color: rgb(255, 255, 255);
-    text-align: center;
-    align-items: center;
 }
-.content {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    align-items: center;
+.container {
+    background-color: rgb(129, 216, 129);
+    width: 100%;
+}
+.mapa {
+  height: 250px;
+  width: 100%;
+  border-radius: 20px;
 }
