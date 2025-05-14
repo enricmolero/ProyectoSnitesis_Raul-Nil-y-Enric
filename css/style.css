@@ -8,35 +8,60 @@
     color: rgb(0, 0, 0);
     text-align: center;
     align-items: center;
+    margin-top: -24px;
+}
+#navbar {
+    margin-bottom: -35px;
 }
 .botones {
     background-color: rgb(129, 216, 129);
     color: rgb(0, 0, 0);
     text-align: center;
     align-items: center;
-    margin-left: -30px;
     border: 2px solid #000000;
     box-shadow: #000000 0px 0px 10px;
     padding: 10px 20px;
     border-radius: 10px;
 }
+
 .lineabotones {
     color: rgb(0, 0, 0);
     text-align: center;
     align-items: center;
 }
+
 .ul {
     color: rgb(255, 255, 255);
 }
+
 .container {
     background-color: rgb(129, 216, 129);
     width: 100%;
 }
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgb(145, 218, 145)
+}
+
+.container2 img {
+    height: 200px;
+    width: 200px;
+}
+
+.container2 p {
+    height: 200px;
+    width: 200px;
+}
+
 .mapa {
   height: 250px;
   width: 100%;
   border-radius: 20px;
 }
+
 .footer {
   display: flex;
   justify-content: space-around;
@@ -46,6 +71,7 @@
   font-family: 'Bebas Neue', sans-serif;
   color: #333;
   border-top: 1px solid #ddd;
+  margin-top: 20px;
 }
 
 .footer-logo {
@@ -96,4 +122,113 @@
 
 .icon {
   margin-right: 8px;
+}
+
+.activities-container {
+    font-family: "Bebas Neue", sans-serif;
+    text-align: left;
+}
+
+.activity-card {
+    background-color: #d9ead8;
+    padding: 20px;
+    border-radius: 25px;
+    border: 1px solid #6ac1b7;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.activity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.activity-card h3 {
+    color: #268342;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.activity-card p {
+    font-size: 1rem;
+    color: #4e4b4b;
+    margin: 0;
+}
+
+@media (max-width: 450px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .navbar-brand img {
+    height: 30px;
+  }
+
+  .title h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .carousel-inner img {
+    height: auto;
+    width: 100%;
+  }
+
+  .lineabotones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+  }
+
+  .lineabotones li,
+  .lineabotones a.botones {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .footer-logo img {
+    max-width: 100px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .footer-section {
+    margin-top: 10px;
+  }
+
+  .mapa {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  iframe {
+    width: 100% !important;
+  }
+
+  p, h3, h4 {
+    text-align: center;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 5px 0;
+  }
 }

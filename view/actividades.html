@@ -1,47 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogo de actividades en C.C.C.S.E.L</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sanchez:ital@0;1&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de actividades en C.C.C.S.E.L</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body class="body">
-    <div class="title">
-        <h1>Catalogo de actividades en C.C.C.S.E.L</h1>
-    </div>
-    <div class="activities">
-        <h2>Actividades</h2>
-        <ul>
-            <li><p class="content">Talleres de prevención de adicciones</p></li>
-            <li>Charlas informativas sobre el juego responsable</li>
-            <li>Grupos de apoyo para personas afectadas por adicciones</li>
-            <li>Actividades recreativas y deportivas</li>
-            <li>Campañas de concienciación en colegios y comunidades</li>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="../img/logo.png" alt="Inicio" class="img-fluid" style="height: 40px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto lineabotones">
+          <li class="nav-item"><a class="nav-link" href="./nuestraong.html">Nuestra ONG</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html">Volver al inicio</a></li>
         </ul>
-        </div>
-        </div>
-    <div class="lineabotones">
-    <a href="../index.html" class="botones">Volver al inicio</a>
+      </div>
     </div>
-</body>
-<footer class="footer">
-  <div class="footer-logo">
-    <img src="../img/logo.png" alt="Logo de C.C.C.S.E.L.">
-    <p class="slogan">paso a paso</p>
-  </div>
-  <div class="footer-section">
-    <h4>Contacto</h4>
-    <p><i class="icon">📍</i> Av. Mare de Déu de Bellvitge, 100, 110, 08907 L'Hospitalet de Llobregat, Barcelona</p>
-    <p><i class="icon">📞</i> Tel: 672 278 197</p>
-    <p><i class="icon">✉️</i> Email: ner@gmail.com</p>
-  </div>
-</footer>
+  </nav>
 
-</html>
+  <!-- Título -->
+  <div class="title p-4">
+    <h1>Catálogo de actividades en C.C.C.S.E.L</h1>
+  </div>
+
+  <!-- Actividades --> 
+  <div class="activities-container container my-5">
+    <h2 class="mb-4">Actividades</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="activity-card">
+          <h3>Talleres de prevención</h3>
+          <p>Sesiones prácticas para evitar recaídas y fomentar hábitos saludables.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="activity-card">
+          <h3>Charlas informativas</h3>
+          <p>Educación sobre los riesgos del juego y cómo afrontarlos.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="activity-card">
+          <h3>Grupos de apoyo</h3>
+          <p>Encuentros semanales para compartir experiencias y recibir apoyo emocional.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="activity-card">
+          <h3>Actividades recreativas</h3>
+          <p>Deporte, arte y dinámicas de ocio para fortalecer vínculos y autoestima.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="activity-card">
+          <h3>Campañas en colegios</h3>
+          <p>Charlas y talleres para jóvenes en centros educativos y comunitarios.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <h3>Fotos de ejemplo de actividades</h3>
+        <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../img/sentados.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/escucha.webp" class="d-block w-100" class="sliderpic" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/airelibre.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/charla.jpg" class="d-block w-100" alt="...">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+    </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="../img/logo.png" alt="Logo de C.C.C.S.E.L.">
+      <p class="slogan">paso a paso</p>
+    </div>
+    <div class="footer-section">
+      <h4>Contacto</h4>
+      <p><i class="icon">📍</i> Av. Mare de Déu de Bellvitge, 100, 110, 08907 L'Hospitalet de Llobregat, Barcelona</p>
+      <p><i class="icon">📞</i> Tel: 672 278 197</p>
+      <p><i class="icon">✉️</i> Email: ner@gmail.com</p>
+    </div>
+  </footer>
+</body>
 </html>
