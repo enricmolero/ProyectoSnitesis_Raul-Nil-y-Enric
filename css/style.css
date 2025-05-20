@@ -92,16 +92,24 @@
 }
 
 .col {
-    width: 50%;
+    width: 100%;;
+
 }
 
-.imagen-vicios {
+.col img {
+    height: 400px;
+    width: 400px;
+    border-radius: 40px;
+
+}
+
+.col p {
     height: 200px;
-    width: 200px;
-    display: flex;
-    margin-left: 550px;
-
+    width: 600px;
+    padding-right: 100px;
+    margin-bottom: 200px;
 }
+
 .mapa {
   height: 250px;
   width: 90%;
@@ -114,11 +122,8 @@
   justify-content: space-around;
   align-items: flex-start;
   background-color: rgb(197, 224, 197);
-  padding: 30px 20px;
   font-family: 'Bebas Neue', sans-serif;
   color: #333;
-  border-top: 1px solid #ddd;
-  margin-top: 20px;
 }
 
 .footer-logo {
@@ -198,6 +203,10 @@
     font-size: 1rem;
     color: #4e4b4b;
     margin: 0;
+    align-items: center;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 25%;
 }
 
 .error-container {
@@ -220,79 +229,58 @@
     padding-left: 250px;
 }
 
-@media (max-width: 450px) {
-  body {
-    font-size: 16px;
-    padding: 10px;
-  }
+#nosotros {
+  width: 100%;
+  height: 100%;
+}
 
-  .navbar-brand img {
-    height: 30px;
-  }
+#unidos {
+  width: 50%;
+  height: 70%;
+  margin-top: 60px;
+}
 
+#texto-unidos {
+  width: 50%;
+  height: 70%;
+  margin-top: 60px;
+}
+
+.foto1 {
+  width: 100%;
+  height: 100%;
+  background-color: #8ccd88;
+}
+
+@media screen and (max-width: 768px) {
   .title h1 {
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .botones, .botones-idiomas {
+    padding: 8px 16px;
+    font-size: 1rem;
   }
 
   .carousel-inner img {
-    height: auto;
-    width: 100%;
-  }
-
-  .lineabotones {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin: 15px 0;
-  }
-
-  .lineabotones li,
-  .lineabotones a.botones {
-    width: 100%;
-    text-align: center;
+    max-height: 250px;
   }
 
   .footer {
     flex-direction: column;
-    text-align: center;
     align-items: center;
-    padding: 15px;
-  }
-
-  .footer-logo img {
-    max-width: 100px;
-    height: auto;
-    margin: 0 auto;
-  }
-
-  .footer-section {
-    margin-top: 10px;
-  }
-
-  .mapa {
-    width: 100% !important;
-    height: auto !important;
-  }
-
-  iframe {
-    width: 100% !important;
-  }
-
-  p, h3, h4 {
     text-align: center;
   }
 
-  .container {
-    padding: 10px;
+  .footer-logo, .footer-section {
+    max-width: 100%;
+  }
+
+  .container2 {
+    flex-direction: column;
   }
 
   .navbar-nav {
     text-align: center;
-  }
-
-  .navbar-nav .nav-item {
-    margin: 5px 0;
   }
 }
